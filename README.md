@@ -15,7 +15,6 @@ Welcome to AtomTasks! This is a task management application built with **Angular
 * **Task Creation/Editing**: Dedicated forms to add new tasks or modify existing ones.
 * **Task Deletion**: Delete tasks individually.
 * **Task Status**: Mark tasks as completed or active.
-* **Error Handling**: Provides visual feedback for API errors and form validation.
 * **Modern Styling**: Integration with **Bootstrap 5** for a responsive and appealing design.
 
 ---
