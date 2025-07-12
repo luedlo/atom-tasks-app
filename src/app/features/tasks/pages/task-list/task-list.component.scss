@@ -1,0 +1,106 @@
+/* src/app/features/tasks/pages/task-list/task-list.component.scss */
+.tasks-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background-color: #fcfcfc;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .tasks-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+  
+    h2 {
+      color: #333;
+      font-size: 2em;
+      margin: 0;
+    }
+  
+    .header-actions {
+      display: flex;
+      gap: 10px;
+    }
+  }
+  
+  .filter-buttons {
+    margin-bottom: 25px;
+    text-align: center;
+  
+    button {
+      padding: 8px 15px;
+      margin: 0 5px;
+      border: 1px solid #007bff;
+      border-radius: 20px;
+      background-color: transparent;
+      color: #007bff;
+      cursor: pointer;
+      transition: background-color 0.2s, color 0.2s;
+  
+      &.active {
+        background-color: #007bff;
+        color: white;
+      }
+  
+      &:hover:not(.active) {
+        background-color: rgba(0, 123, 255, 0.1);
+      }
+    }
+  }
+  
+  .api-error-message {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .no-tasks-message {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 30px 0;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      border: 1px solid #e9ecef;
+      border-radius: 5px;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      transition: box-shadow 0.2s, border-color 0.2s;
+  
+      &:hover {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-color: #ced4da;
+      }
+  
+      &.completed {
+        background-color: #e6ffe6;
+        border-color: #c3e6cb;
+      }
+    }
+  }
+  

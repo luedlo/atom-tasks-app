@@ -1,0 +1,23 @@
+<header>
+  <nav class="navbar bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="./../assets/images/favicon.ico" alt="Logo" width="32" height="32" class="d-inline-block align-text-center">
+        ATOM TASKS APP
+      </a>
+      <form class="d-flex" role="search" *ngIf="isLogged$ | async">
+        <span class="navbar-text float-right me-3">
+          Welcome: <strong>{{ email$ | async }}</strong>
+        </span>
+        <button class="btn btn-outline-info" (click)="logout()">👉🏻🚪</button>
+      </form>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+</footer>
