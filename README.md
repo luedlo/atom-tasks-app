@@ -30,7 +30,6 @@ Welcome to AtomTasks! This is a task management application built with **Angular
 * **Backend / Database**:
     * Github Repository: https://github.com/luedlo/atom-tasks-api
     * **Firebase Firestore**: Cloud NoSQL database for storing tasks and users.
-    * **Firebase Authentication**: For user management (though the current implementation simulates a backend API for authentication, assuming a real backend would handle this).
 
 ---
 
@@ -100,7 +99,6 @@ src/
 │               ├── task-form/  # Component for creating/editing tasks
 │               └── task-list/  # Component for listing tasks
 ├── assets/                     # Static assets
-├── firebaseConfig.ts           # Firebase initialization configuration
 └── styles.scss                 # Global application styles
 ```
 
